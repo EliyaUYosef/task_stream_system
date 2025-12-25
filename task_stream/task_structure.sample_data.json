@@ -1,0 +1,117 @@
+{
+  "_id": "ObjectId",
+
+  "user_id": "9725XXXXXXXX",
+
+  "status": "WAITING_FOR_INPUT",
+  "action_type": "task",
+  "next_action": null,
+
+  "priority": 2,
+
+  "created_at": 1734960000,
+  "updated_at": 1734960123,
+  "expires_at": 1734963723,
+
+  "source": {
+    "type": "whatsapp",
+    "message_id": "wamid.xxx",
+    "raw_text": "תזכיר לי לדבר עם דני מחר ב-10 גג חצי שעה",
+    "audio_s3": "s3://bucket/audio/123.ogg",
+    "transcript": "תזכיר לי לדבר עם דני מחר ב-10 גג חצי שעה"
+  },
+
+  "parsed": {
+    "title": "לדבר עם דני",
+    "description": null,
+
+    "category": "עבודה",
+    "list": "עבודה",
+
+    "priority": 2,
+
+    "time": {
+      "raw_time_expression": "מחר ב-10",
+      "deadline_expression": "tomorrow 10:00",
+      "start_ts": 1735030800,
+      "end_ts": 1735032600,
+      "due_ts": 1735030800,
+      "estimated_duration_min": 30,
+      "max_duration_min": 30,
+      "is_night": false
+    },
+
+    "entities": {
+      "contact_person": "דני",
+      "contact_type": "family",
+      "location": "חדר-שינה",
+      "requested_file": null
+    },
+
+    "recurrence_candidate": {
+      "rrule": null
+    },
+
+    "notification_suggestion": {
+      "type": "email",
+      "minutes_before": 15
+    }
+  },
+
+  "schedule": {
+    "start_ts": 1735030800,
+    "end_ts": 1735032600,
+
+    "recurrence": {
+      "rrule": "FREQ=WEEKLY;BYDAY=SU",
+      "timezone": "Asia/Jerusalem",
+      "until": null,
+      "count": null
+    },
+
+    "notifications": [
+      {
+        "type": "email",
+        "minutes_before": 15,
+        "enabled": true,
+        "sent_at": null
+      }
+    ],
+
+    "visibility": "busy"
+  },
+
+  "flow": {
+    "missing_fields": ["schedule.start_ts"],
+    "last_question": "מתי בדיוק תרצה לבצע את המשימה?",
+    "asked_at": 1734960123,
+    "attempts": 1
+  },
+
+  "channels": {
+    "allow_email": true,
+    "allow_whatsapp": true
+  },
+
+  "attachments": [
+    {
+      "type": "audio",
+      "s3_path": "s3://bucket/audio/123.ogg",
+      "uploaded_at": 1734960000
+    }
+  ],
+
+  "participants": [
+    {
+      "name": "דני",
+      "email": "dani@gmail.com",
+      "role": "attendee"
+    }
+  ],
+
+  "meta": {
+    "schema_version": 1,
+    "debug": false,
+    "tags": ["family", "phone-call"]
+  }
+}

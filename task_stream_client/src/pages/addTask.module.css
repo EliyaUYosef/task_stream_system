@@ -1,0 +1,45 @@
+.addTaskContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+
+.addTaskForm {
+  width: 100%;
+}
+
+.formGroup {
+  border: 1px solid #ddd;
+  padding: 12px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex-wrap: nowrap;
+
+  border-radius: 16px;
+}
+
+.formInput {
+}
+
+.formTextarea {
+}
+
+.formSelect {
+}
+
+.formActions {
+}
+
+.btnPrimary {
+}
+.formDateInput {
+}
+
+.pac-container {
+  z-index: 10000 !important;
+  background-color: white !important;
+  display: block !important;
+}

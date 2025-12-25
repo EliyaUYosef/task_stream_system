@@ -1,0 +1,42 @@
+* {
+  background: white;
+}
+.container {
+  border: 1px solid #ccc;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+.pageTitle {
+  font-weight: 900;
+}
+.noTasksMessage {
+  padding: 8px 14px;
+  border: 1px solid #ddd;
+}
+.tasksList {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+.taskItem {
+  border: 1px solid #ddd;
+  font-size: 16px;
+  padding: 8px 14px;
+}
+.taskTitle {
+  font-weight: 700;
+  padding-right: 8px;
+  margin-bottom: 8px;
+}
+.taskDescription {
+  padding-right: 12px;
+}
+.taskTimestamp {
+  padding-right: 16px;
+}
+.taskActions {
+  display: flex;
+  gap: 4px;
+}
